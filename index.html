@@ -9,6 +9,71 @@
   </head>
 
   <body>
+
+    <main class="signup-container">
+
+      <aside class="branding-panel">
+        <header class="brand-header">
+          <img src="images/odin-logo.png" alt="The Odin logo" class="brand-logo">
+          <h1 class="brand-name">ODIN</h1>
+        </header>
+      </aside>
+
+      <section class="form-panel">
+        <div class="form-introduction">
+          <p class="intro-text">
+            This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+            <br>
+            Sign up <em>now</em> to get started.
+          </p>
+          <p class="intro-text">You <em>know</em> you want to.</p>
+        </div>
+
+        <div class="signup-form-container">
+          <h2 class="form-title">Let's do this!</h2>
+          <form id="signup-form" class="signup-form" action="#" method="post">
+
+            <fieldset class="form-fields">
+              <legend class="visually-hidden">User Information</legend>
+              <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" name="first_name" id="first-name" required>
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last_name" id="last-name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+              </div>
+              <div class="form-group">
+                <label for="phone-number">Phone Number</label>
+                <input type="tel" name="phone_number" id="phone-number">
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>
+              </div>
+              <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" name="confirm_password" id="confirm-password" required>
+              </div>
+            </fieldset>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn--primary">Create Account</button>
+              <p class="login-prompt">
+                <span>Already have an account?</span> <a href="#" class="login-link">Log In</a>
+              </p>
+            </div>
+
+          </form>
+        </div>
+      </section>
+
+    </main>
+
   </body>
 
 </html>
