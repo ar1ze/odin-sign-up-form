@@ -73,9 +73,16 @@
     opacity: 0.9;
   }
 
-  input {
+  .text-input {
     padding: 0.4rem;
     font-size: 0.85rem;
+    border: 1px solid $input-border-color-default;
+    border-radius: 4px;
+    outline: none;
+  }
+
+  input:focus {
+    border-color: $input-border-color-variation;
   }
 }
 

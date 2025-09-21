@@ -193,9 +193,15 @@ textarea:not([rows]) {
   letter-spacing: 0.01rem;
   opacity: 0.9;
 }
-.form-field input {
+.form-field .text-input {
   padding: 0.4rem;
   font-size: 0.85rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  outline: none;
+}
+.form-field input:focus {
+  border-color: green;
 }
 
 .form-actions {
