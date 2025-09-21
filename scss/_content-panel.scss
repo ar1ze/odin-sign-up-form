@@ -23,10 +23,7 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  
-  .form-title {
-    padding: 0.5rem $content-padding;
-  }
+  box-shadow: 0 0 10px $shadow-color;
 }
 
 .registration-form {
@@ -36,14 +33,57 @@
 }
 
 .form-fieldset {
+  display: flex;
+  align-items: center;
   flex-basis: 46%;
+  flex: 1;
   padding: $content-padding;
+  border: none;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  flex: 1;
+  margin-top: -4%;
+
+  .form-title {
+    padding-bottom: 1.1rem;
+  }
+}
+
+.form-row {
+  display: flex;
+  gap: 5rem;
+  width: 70%;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  .field-label {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: $color-black;
+    letter-spacing: 0.01rem;
+    opacity: 0.9;
+  }
+
+  input {
+    padding: 0.4rem;
+    font-size: 0.85rem;
+  }
 }
 
 .form-actions {
   flex: 1;
   background: $content-bg;
   padding: 2.5rem $content-padding;
+  box-shadow: 0 0 10px $shadow-color;
 }
 
 .btn-primary {
@@ -55,16 +95,16 @@
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.2s ease;
-  
+
   &:hover {
     background: $btn-primary-hover;
     transform: translateY(-1px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px $shadow-color;
   }
-  
+
   &:active {
     transform: translateY(0);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px $shadow-color;
   }
 }
 
@@ -76,7 +116,7 @@
   color: $link-color;
   font-weight: bold;
   text-decoration: none;
-  
+
   &:hover {
     color: $link-hover;
     opacity: 0.85;

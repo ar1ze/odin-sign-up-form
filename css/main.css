@@ -145,9 +145,7 @@ textarea:not([rows]) {
   display: flex;
   flex-direction: column;
   flex: 1;
-}
-.form-container .form-title {
-  padding: 0.5rem 2.8rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .registration-form {
@@ -157,14 +155,54 @@ textarea:not([rows]) {
 }
 
 .form-fieldset {
+  display: flex;
+  align-items: center;
   flex-basis: 46%;
+  flex: 1;
   padding: 2.8rem;
+  border: none;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  flex: 1;
+  margin-top: -4%;
+}
+.form-wrapper .form-title {
+  padding-bottom: 1.1rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 5rem;
+  width: 70%;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.form-field .field-label {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #000000;
+  letter-spacing: 0.01rem;
+  opacity: 0.9;
+}
+.form-field input {
+  padding: 0.4rem;
+  font-size: 0.85rem;
 }
 
 .form-actions {
   flex: 1;
   background: #f7f8f9;
   padding: 2.5rem 2.8rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .btn-primary {

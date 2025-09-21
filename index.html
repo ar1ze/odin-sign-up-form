@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <title>Sign Up Form</title>
   </head>
+
   <body>
     <main class="signup-container">
       <aside class="hero-panel">
@@ -19,7 +21,7 @@
           <p>Photo by <a href="https://unsplash.com/@haliewestphoto">by Halie West on Unsplash</a></p>
         </div>
       </aside>
-      
+
       <section class="content-panel">
         <div class="intro-section">
           <div class="intro-container">
@@ -32,51 +34,51 @@
             <p class="intro-tagline">You <em>know</em> you want to.</p>
           </div>
         </div>
-        
+
         <div class="form-container">
-          <h2 class="form-title">Let's do this!</h2>
           <form id="signup-form" class="registration-form" action="#" method="post">
             <fieldset class="form-fieldset">
-              <legend class="visually-hidden">User Information</legend>
-              
-              <div class="form-row">
-                <div class="form-field">
-                  <label for="first-name" class="field-label">First Name</label>
-                  <input type="text" name="first_name" id="first-name" class="text-input" required>
+              <div class="form-wrapper">
+                <h2 class="form-title">Let's do this!</h2>
+                <div class="form-row">
+                  <div class="form-field">
+                    <label for="first-name" class="field-label">First Name</label>
+                    <input type="text" name="first_name" id="first-name" class="text-input" required>
+                  </div>
+                  <div class="form-field">
+                    <label for="last-name" class="field-label">Last Name</label>
+                    <input type="text" name="last_name" id="last-name" class="text-input" required>
+                  </div>
                 </div>
-                <div class="form-field">
-                  <label for="last-name" class="field-label">Last Name</label>
-                  <input type="text" name="last_name" id="last-name" class="text-input" required>
+
+                <div class="form-row">
+                  <div class="form-field">
+                    <label for="email" class="field-label">Email</label>
+                    <input type="email" name="email" id="email" class="text-input" required>
+                  </div>
+                  <div class="form-field">
+                    <label for="phone-number" class="field-label">Phone Number</label>
+                    <input type="tel" name="phone_number" id="phone-number" class="text-input">
+                  </div>
                 </div>
-              </div>
-              
-              <div class="form-row">
-                <div class="form-field">
-                  <label for="email" class="field-label">Email</label>
-                  <input type="email" name="email" id="email" class="text-input" required>
-                </div>
-                <div class="form-field">
-                  <label for="phone-number" class="field-label">Phone Number</label>
-                  <input type="tel" name="phone_number" id="phone-number" class="text-input">
-                </div>
-              </div>
-              
-              <div class="form-row">
-                <div class="form-field">
-                  <label for="password" class="field-label">Password</label>
-                  <input type="password" name="password" id="password" class="text-input" required>
-                </div>
-                <div class="form-field">
-                  <label for="confirm-password" class="field-label">Confirm Password</label>
-                  <input type="password" name="confirm_password" id="confirm-password" class="text-input" required>
+
+                <div class="form-row">
+                  <div class="form-field">
+                    <label for="password" class="field-label">Password</label>
+                    <input type="password" name="password" id="password" class="text-input" required>
+                  </div>
+                  <div class="form-field">
+                    <label for="confirm-password" class="field-label">Confirm Password</label>
+                    <input type="password" name="confirm_password" id="confirm-password" class="text-input" required>
+                  </div>
                 </div>
               </div>
             </fieldset>
-            
+
             <div class="form-actions">
               <button type="submit" class="btn-primary">Create Account</button>
               <p class="login-prompt">
-                <span>Already have an account?</span> 
+                <span>Already have an account?</span>
                 <a href="#" class="login-link">Log In</a>
               </p>
             </div>
@@ -85,4 +87,5 @@
       </section>
     </main>
   </body>
+
 </html>
