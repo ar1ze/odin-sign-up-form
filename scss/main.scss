@@ -1,7 +1,8 @@
-@use 'variables' as *; 
+@use 'variables' as *;
 @use 'reset';
 @use 'fonts';
 @use 'hero-panel';
+@use 'content-panel';
 
 body {
   margin: 0;
@@ -11,9 +12,4 @@ body {
 .signup-container {
   display: flex;
   height: $full-height;
-}
-
-.content-panel {
-  width: 60%;
-  padding: 2rem;
 }

@@ -62,6 +62,20 @@ textarea:not([rows]) {
 }
 
 @font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
   font-family: "Norse";
   src: url("../fonts/Norse-Bold.woff2") format("woff2"), url("../fonts/Norse-Bold.woff") format("woff");
   font-weight: bold;
@@ -108,6 +122,44 @@ textarea:not([rows]) {
   text-decoration: none;
 }
 
+.content-panel {
+  font-family: "Montserrat", system-ui, -apple-system, sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.content-panel .intro-section,
+.content-panel .form-fieldset {
+  padding: 3rem;
+}
+.content-panel .intro-section {
+  height: 28vh;
+  background: #f7f8f9;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 4rem;
+}
+.content-panel .form-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.content-panel .form-container .registration-form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.content-panel .form-container .registration-form .form-fieldset {
+  flex-basis: 45%;
+}
+.content-panel .form-container .registration-form .form-actions {
+  flex: 1;
+  background: #f7f8f9;
+}
+
 body {
   margin: 0;
   font-size: 14px;
@@ -116,9 +168,4 @@ body {
 .signup-container {
   display: flex;
   height: 100vh;
-}
-
-.content-panel {
-  width: 60%;
-  padding: 2rem;
 }/*# sourceMappingURL=main.css.map */

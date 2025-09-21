@@ -1,0 +1,45 @@
+@use 'variables' as *;
+
+.content-panel {
+  font-family: $font-primary;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  
+  .intro-section,
+  .form-fieldset {
+    padding: $content-padding;
+  }
+  
+  .intro-section {
+    height: $nav-section-height;
+    background: $content-bg;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 4rem;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    .registration-form {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+
+      .form-fieldset {
+        flex-basis: 45%;
+      }
+
+      .form-actions {
+        flex: 1;
+        background: $content-bg;
+      }
+    }
+  }
+}
