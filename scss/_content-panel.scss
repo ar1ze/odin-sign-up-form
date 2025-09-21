@@ -5,41 +5,80 @@
   display: flex;
   flex-direction: column;
   width: 60%;
+}
+
+.intro-section {
+  height: $nav-section-height;
+  background: $content-bg;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: $content-padding;
+  padding-bottom: 4rem;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   
-  .intro-section,
-  .form-fieldset {
-    padding: $content-padding;
+  .form-title {
+    padding: 0.5rem $content-padding;
+  }
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.form-fieldset {
+  flex-basis: 46%;
+  padding: $content-padding;
+}
+
+.form-actions {
+  flex: 1;
+  background: $content-bg;
+  padding: 2.5rem $content-padding;
+}
+
+.btn-primary {
+  background: $btn-primary;
+  color: $color-white;
+  font-weight: bold;
+  padding: 1rem 3.4rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    background: $btn-primary-hover;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   
-  .intro-section {
-    height: $nav-section-height;
-    background: $content-bg;
-    font-weight: bold;
-    font-size: 1.2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding-bottom: 4rem;
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
+}
 
-  .form-container {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+.login-prompt {
+  margin-top: 1.4rem;
+}
 
-    .registration-form {
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-
-      .form-fieldset {
-        flex-basis: 45%;
-      }
-
-      .form-actions {
-        flex: 1;
-        background: $content-bg;
-      }
-    }
+.login-link {
+  color: $link-color;
+  font-weight: bold;
+  text-decoration: none;
+  
+  &:hover {
+    color: $link-hover;
+    opacity: 0.85;
   }
 }
