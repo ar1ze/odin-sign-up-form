@@ -1,0 +1,47 @@
+@use 'variables' as *;
+
+.hero-panel {
+  background: no-repeat url('/images/background.jpg') center/cover;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  .brand-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: $nav-section-height;
+    width: 100%;
+  }
+
+  .brand-bar {
+    background: $overlay-bg;
+    height: 11vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    .brand-logo {
+      height: 85%;
+    }
+
+    .brand-text {
+      color: $color-white;
+      font-family: $font-brand;
+      font-size: 5.6rem;
+    }
+  }
+  
+  .photo-credit {
+    color: lightgray;
+    font-size: 0.9rem;
+    padding-bottom: 1rem;
+
+    a:hover {
+      text-decoration: none;
+    }
+  }
+}

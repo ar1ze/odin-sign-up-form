@@ -1,0 +1,19 @@
+@use 'variables' as *; 
+@use 'reset';
+@use 'fonts';
+@use 'hero-panel';
+
+body {
+  margin: 0;
+  font-size: 14px;
+}
+
+.signup-container {
+  display: flex;
+  height: $full-height;
+}
+
+.content-panel {
+  width: 60%;
+  padding: 2rem;
+}

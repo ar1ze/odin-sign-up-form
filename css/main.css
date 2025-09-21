@@ -1,1 +1,124 @@
-/*# sourceMappingURL=main.css.map */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input, button,
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+:target {
+  scroll-margin-block: 5ex;
+}
+
+@font-face {
+  font-family: "Norse";
+  src: url("../fonts/Norse-Bold.woff2") format("woff2"), url("../fonts/Norse-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+.hero-panel {
+  background: no-repeat url("/images/background.jpg") center/cover;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-panel .brand-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 28vh;
+  width: 100%;
+}
+.hero-panel .brand-bar {
+  background: rgba(0, 0, 0, 0.6);
+  height: 11vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.hero-panel .brand-bar .brand-logo {
+  height: 85%;
+}
+.hero-panel .brand-bar .brand-text {
+  color: #ffffff;
+  font-family: "Norse", serif;
+  font-size: 5.6rem;
+}
+.hero-panel .photo-credit {
+  color: lightgray;
+  font-size: 0.9rem;
+  padding-bottom: 1rem;
+}
+.hero-panel .photo-credit a:hover {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  font-size: 14px;
+}
+
+.signup-container {
+  display: flex;
+  height: 100vh;
+}
+
+.content-panel {
+  width: 60%;
+  padding: 2rem;
+}/*# sourceMappingURL=main.css.map */
