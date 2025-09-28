@@ -7,7 +7,7 @@ A sign-up form for an imaginary service built with HTML and CSS featuring custom
 </div>
 
 ## Live Demo
-📝 [Try the Sign-Up Form](https://ar1ze.github.io/odin-sign-up-form/)
+📝 [Try the Sign-Up Form](https://ar1ze.github.io/sign-up-form/)
 
 ## Key Technologies & Concepts
 • HTML  
